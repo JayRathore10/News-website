@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom';
 import './News.css';
 
-export function News({ news }) {
+export function News({ news , index}) {
   return (
     <div className="news-div">
-      <a href={news.url} target="_blank" rel="noopener noreferrer">
+      <Link to={`/news/${index}`} rel="noopener noreferrer">
         <img src={news.urlToImage} alt='favicon.png' className="news-img" />
-      </a>
+      </Link>
       <div className="news-des">
-        <a href={news.url} className="news-heading">{news.title}</a>
+        <Link to={`/news/${index}`} className="news-heading">{news.title}</Link>
         <p>{news.description}</p>
       </div>
     </div>
