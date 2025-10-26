@@ -15,22 +15,22 @@ function App() {
   // for the current date
   //const today = new Date().toISOString().split('T')[0];
 
-  const apiKey = `a6060425be3f4ac19c6fb8ee9a680772`;
+  // const apiKey = `a6060425be3f4ac19c6fb8ee9a680772`;
 
-  const query = !search ? "news" : search;
+  // const query = !search ? "news" : search;
 
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await axios.get(`https://newsapi.org/v2/everything?q=${query}&sortBy=popularity&apiKey=${apiKey}`);
+        const res = await axios.get(`/api/news?q=${search || "news"}`);
         setArticles(res.data.articles);
       } catch (error) {
         console.log(error);
       }
     }
     fetchNews();
-  }, [apiKey, query]);
+  }, [search]);
 
 
   return (
