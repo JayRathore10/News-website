@@ -1,0 +1,11 @@
+.news-div{
+  /* display: flex;
+  flex-direction: row; */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.news-img{
+  height: 500px;
+  width: 76%;
+}
