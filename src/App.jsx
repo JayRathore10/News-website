@@ -2,8 +2,8 @@ import { useEffect , useState } from 'react';
 import axios from 'axios';
 import { Search } from './components/Search';
 import { News } from './components/News';
-import './App.css';
 import { Header } from './components/header';
+import './App.css';
 
 function App(){
 

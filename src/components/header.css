@@ -1,4 +1,8 @@
 .heading{
-  font-family: "Caprasimo", serif;
+  margin-top:10px ;
   text-align: center;
+}
+
+.heading-body{
+    background-color: rgb(245, 248, 248);
 }
