@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Search } from './components/Search';
 import { News } from './components/News';
-import { Header } from './components/header';
+import { Header } from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 import { NewsDesPage } from './pages/NewsDesPage';
 import './App.css';
